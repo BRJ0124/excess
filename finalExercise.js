@@ -40,6 +40,23 @@ const person = {
     const colors = ["pink", "orange", "blue", "Yellow", "Yellow"];
     console.log(colors);
 
+    /// reverse and transform
+    let animals = ["Elephant", " Dolphin", "Lion", "Giraffe"];
+let reversedAnimals = [];
+
+for (let i = 0; i < animals.length; i++) {
+    let word = animals[i];
+    let reversedWord = "";
+
+    for (let j = word.length - 1; j >= 0; j--) {
+        reversedWord += word[j];
+    }
+
+    reversedAnimals.push(reversedWord.toUpperCase());
+}
+
+console.log(reversedAnimals);
+
     /// filtering and counting huhu
 let numbers = [12, 45, 67, 23, 90, 32, 11, 9, 28];
 let filtered = [];
